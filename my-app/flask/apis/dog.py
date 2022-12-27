@@ -33,7 +33,4 @@ def get_dog_names(self):
     url = "https://dog.ceo/api/breeds/list/all" 
     response = requests.get(url)
     result = response.json()
-    writeFile =open('result', 'w')
-    writeFile.write(writeFile)
-    writeFile.close()
     return result

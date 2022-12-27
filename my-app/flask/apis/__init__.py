@@ -1,6 +1,7 @@
 from flask import Flask, Blueprint
 from flask_restx import Resource, Api, Namespace, fields
 from .dog import api as dog
+from .dog_chatinfo import api as chatinfo
 
 
 # https://flask-restx.readthedocs.io/en/latest/scaling.html
@@ -14,3 +15,4 @@ api = Api(
 
 # two api calls inside 
 api.add_namespace(dog, path='/api/dog')
+api.add_namespace(chatinfo, path='/api/chatinfo')
