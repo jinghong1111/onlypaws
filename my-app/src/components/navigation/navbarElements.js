@@ -1,4 +1,5 @@
 import Button from 'react-bootstrap/Button';
+import { Link, Routes, Route } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -6,46 +7,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { StyleSheet, Text, View } from 'react-native';
 //import { UserContext } from "../../contexts/user.context";
-import { useContext, useEffect, useState } from "react";
-import {
-  ScrollView,
-  TextInput,
-  Keyboard
-} from 'react-native';
+
 
 import React, { Component }  from 'react';
-// const { logOutUser } = useContext(UserContext);
- 
-// import { View, Text, StyleSheet, Image, TextInput, Pressable, Keyboard } from 'react-native';
 
-function NavScrollExample() {
-//   const handleNameChange = (name) => {
-//     this.setState({ name });
-//   }
-//   this.state = { name: '' }
+import './Navbar.css'
 
-//   this.handleNameChange = this.handleNameChange.bind(this);
-//   // chandleChange(event){
-//   //   let fieldName = event.target.name;
-//   //   let fleldVal = event.target.value;
-//   //   this.setState({form: {...this.state.form, [fieldName]: fleldVal}})
-//   // }
-// //   this.handleChange = this.handleChange.bind(this);
-// //   this.handleSubmit = this.handleSubmit.bind(this);
+const NavScrollExample = () => {
 
-
-// const onChange = (e) => {
-//   let inputName = e.target.name;
-//   let inputValue = e.target.value;
-//   let updatedFormState = Object.assign({}, this.state);
-//   updatedFormState.form[inputName].value = inputValue;
-//   this.setState(updatedFormState);
-//  }
-// const handleSubmit = (event) => {
-
-//   alert('A name was submitted: ' + this.state.value);
-//   event.preventDefault();
-// }
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
@@ -97,16 +66,11 @@ function NavScrollExample() {
           {/* </Form> */}
 
 
-            
-            
-
-
 
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
-
 
 export default NavScrollExample;
